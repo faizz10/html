@@ -1,0 +1,43 @@
+div {
+    background-color: rgb(245, 221, 221);
+    display: block;
+    width: 320px;
+    height: 300px;
+    padding: 40px;
+    margin-top: 130px;
+    margin-left: 530px;
+}
+
+.btn {
+    margin: 0 auto 12px;
+    height: 30px;
+    width: 250px;
+    margin-top: 15px;
+    border: 1px solid rgb(214, 113, 29);
+    cursor: pointer;
+}
+
+#nextbtn {
+    border: 3px solid rgb(214, 113, 29);
+    border-radius: 32px;
+    height: 32px;
+    width: 62px;
+    margin-left: 130px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+.btn:active {
+    box-shadow: 0 0 10px rgba(184, 28, 28, 0.5); /* Add a box shadow when the button is clicked */
+}
+
+#nextbtn:active {
+    box-shadow: 0 0 10px rgba(247, 4, 4, 0.5); /* Add a box shadow when the button is clicked */
+}
+.btn.correct {
+    background-color: #8aff8a; /* Green background for correct option */
+}
+
+.btn.incorrect {
+    background-color: #ff8a8a; /* Red background for incorrect option */
+}

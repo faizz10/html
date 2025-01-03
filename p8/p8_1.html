@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Mouse Hover Effect</title>
+        <script>
+             var originalContent = '<h2><center>Hover over me!</center></h2>';
+              function hoverImage()
+              {
+                change=document.getElementById("content");
+                change.innerHTML='<center><h1 style="color:#c25617;">New Content</h1><img src="https://t.ly/kKNif" height="300px" width="200px"/></center>'
+                change.style.backgroundColor="#0d0c0d";
+              }
+              function onLeave()
+              {
+                change=document.getElementById("content");
+                change.innerHTML=originalContent;
+                change.style.backgroundColor="#a0a0a0";
+              }
+        </script>
+        <style>
+             #content{
+
+                width:700px;
+                height:500px;
+                background-color: rgb(130, 135, 135);
+                margin-top: 120px;
+                margin-left: 450px;
+             }
+             h2{
+                padding-top: 200px;
+             }
+        </style>
+    </head>
+    <body>
+        <div id="content" onmouseover="hoverImage()" onmouseleave="onLeave()">
+            <h2><center>Hover over me!</center></h2>
+        </div>
+    </body>
+</html>

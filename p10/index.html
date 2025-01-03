@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Registeration</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<center>
+    <h2 style="margin-top: 190px;color: rgb(153, 5, 5);">ONLINE EXAM CENTER</h2>
+    <form name="myForm" style="border:3px solid rgb(126, 123, 125);width:400px;margin-top: 30px;" onsubmit="return validateForm();">
+        <b>
+            <h2 id="head1" style="color: rgb(40, 28, 172);">Register Here</h2>
+        </b>
+        <label for="fname">First Name:</label>
+        <input type="text" placeholder="Enter your First Name" name="fname" id="fname"><br>
+        <label for="laname">Last Name:</label>
+        <input type="text" placeholder="Enter your Last Name" name="lname" id="lname"><br>
+        <label id="mob">Mobile No:</label>
+        <input type="text" placeholder="Enter Mobile Number here" name="mobile" id="mobile"><br>
+        <label id="em">e-mail:</label>
+        <input type="text" placeholder="Enter your Email here" name="email" id="email"><br>
+        <label id="course">Select a Course:</label>
+        <select name="course" id="co">
+            <option value="none" selected>Select an Option</option>
+            <option value="mba">MBA</option>
+            <option value="mca">MCA</option>
+            <option value="mtech">M.TECH</option>
+            <option value="btech">B.TECH</option>
+        </select><br>
+        <button type="submit">Submit</button>
+        <button type="reset" value="Reset">Reset</button><br><br>
+        </form>
+</center>
+</body>
+</html>
